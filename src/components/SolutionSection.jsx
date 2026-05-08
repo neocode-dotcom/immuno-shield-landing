@@ -107,7 +107,7 @@ export default function SolutionSection({ onBuyClick }) {
         }}>
           <div>
             <h3 className="font-display" style={{ fontSize: 'var(--text-3xl)', color: 'var(--white)', marginBottom: '1.5rem' }}>
-              Tu seguro de vida biológico
+              Tu apoyo diario integral
             </h3>
             {[
               '✓ Fórmula de alta biodisponibilidad — absorción máxima',
@@ -126,7 +126,7 @@ export default function SolutionSection({ onBuyClick }) {
             ))}
             <div style={{ marginTop: '2rem' }}>
               <button onClick={onBuyClick} className="btn-primary">
-                Activar Mi Escudo PRO →
+                ORDENA AHORA
               </button>
             </div>
           </div>

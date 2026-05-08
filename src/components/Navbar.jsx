@@ -30,7 +30,7 @@ export default function Navbar({ onBuyClick }) {
               color: 'var(--midnight)', fontWeight: 700, fontSize: 'var(--text-xs)',
               letterSpacing: '0.05em', textTransform: 'uppercase', whiteSpace: 'nowrap'
             }}>
-              ⚡ OFERTA LIMITADA — 26% DESCUENTO &nbsp;&nbsp;•&nbsp;&nbsp; ENVÍO GRATIS &nbsp;&nbsp;•&nbsp;&nbsp; GARANTÍA 30 DÍAS
+              ⭐ 20% DE DESCUENTO DE INTRODUCCIÓN &nbsp;&nbsp;•&nbsp;&nbsp; ENVÍO GRATIS EN PUERTO RICO &nbsp;&nbsp;•&nbsp;&nbsp; GARANTÍA DE SATISFACCIÓN DE 30 DÍAS
             </span>
           ))}
         </div>
@@ -62,7 +62,7 @@ export default function Navbar({ onBuyClick }) {
         {/* CTA */}
         <div className="hidden md:flex">
           <button onClick={onBuyClick} className="btn-primary" style={{ padding: '0.6rem 1.5rem', fontSize: 'var(--text-sm)', animation: 'none' }}>
-            ¡COMPRAR AHORA!
+            ORDENA AHORA
           </button>
         </div>
 
@@ -97,7 +97,7 @@ export default function Navbar({ onBuyClick }) {
           ))}
           <button onClick={() => { onBuyClick(); setIsOpen(false); }}
             className="btn-primary" style={{ width: '100%', marginTop: '1rem', animation: 'none' }}>
-            ¡COMPRAR AHORA!
+            ORDENA AHORA
           </button>
         </div>
       )}

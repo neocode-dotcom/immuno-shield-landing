@@ -21,11 +21,11 @@ export default function CheckoutSection() {
           <h2 className="font-display" style={{
             fontSize: 'var(--text-4xl)', color: 'var(--white)', lineHeight: 1.1, marginBottom: '0.75rem'
           }}>
-            No dejes tu salud al azar.<br />
+            Apoya tu sistema inmunológico.<br />
             <span style={{ color: 'var(--cyan)' }} className="text-glow-cyan">Toma el control hoy.</span>
           </h2>
           <p style={{ color: 'var(--white-60)', fontSize: 'var(--text-lg)' }}>
-            La próxima vez que alguien a tu alrededor estornude, agradecerás tener tu escudo activo.
+            El apoyo diario que tu cuerpo necesita para mantener su equilibrio natural.
           </p>
         </div>
 
@@ -126,7 +126,7 @@ export default function CheckoutSection() {
               <ShopifyBuyButton
                 variantId={VARIANT_ID}
                 quantity={quantity}
-                buttonText="¡COMPRAR IMMUNO SHIELD PRO AHORA!"
+                buttonText="ORDENA AHORA"
                 fullWidth={true}
               />
 

@@ -56,13 +56,13 @@ export default function PainSection({ onBuyClick }) {
           <h2 className="font-display" style={{
             fontSize: 'var(--text-4xl)', color: 'var(--white)', lineHeight: 1.1, marginBottom: '1rem',
           }}>
-            Vives en un entorno hostil.<br />
-            <span style={{ color: 'var(--danger)' }}>¿Tus defensas están a la altura?</span>
+            Los desafíos de todos los días.<br />
+            <span style={{ color: 'var(--danger)' }}>¿Tu cuerpo está preparado?</span>
           </h2>
           <p style={{ color: 'var(--white-60)', maxWidth: '600px', margin: '0 auto', fontSize: 'var(--text-lg)' }}>
-            Cada vez que sales a la calle, tus pulmones y tu sistema inmune libran una batalla invisible.
-            La contaminación, los alérgenos mutantes y los virus estacionales están diseñados para romper
-            tu primera línea de defensa.
+            El estrés, los cambios de clima y el estilo de vida actual pueden debilitar tu bienestar. 
+            Mantener un sistema inmunológico equilibrado es fundamental para disfrutar 
+            de tu día al máximo sin interrupciones.
           </p>
         </div>
 
@@ -108,16 +108,16 @@ export default function PainSection({ onBuyClick }) {
               <line x1="15" x2="9" y1="9" y2="15"/>
               <line x1="9" x2="15" y1="9" y2="15"/>
             </svg>
-            Si no fortaleces tu escudo hoy,
+            Apoya tu bienestar diario hoy,
           </p>
           <p style={{ fontSize: 'var(--text-lg)', color: 'var(--danger)' }}>
-            mañana serás la próxima estadística.
+            para un mañana lleno de vitalidad.
           </p>
         </div>
 
         <div style={{ textAlign: 'center' }}>
           <button onClick={onBuyClick} className="btn-primary">
-            Quiero Protegerme Ahora →
+            ORDENA AHORA
           </button>
         </div>
       </div>

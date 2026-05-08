@@ -42,9 +42,9 @@ export default function Hero({ onBuyClick }) {
               marginBottom: '1.25rem',
               color: 'var(--white)',
             }}>
-              No esperes a que<br />
-              <span style={{ color: 'var(--cyan)' }} className="text-glow-cyan">tu cuerpo</span><br />
-              colapse.
+              Activa Tus Defensas<br />
+              <span style={{ color: 'var(--cyan)' }} className="text-glow-cyan">Naturales</span> y Apoya<br />
+              Tu Bienestar Diario
             </h1>
 
             <p className="animate-fade-up animate-delay-3" style={{
@@ -54,14 +54,13 @@ export default function Hero({ onBuyClick }) {
               lineHeight: 1.55,
               maxWidth: '520px',
             }}>
-              <strong style={{ color: 'var(--white)' }}>Immuno Shield PRO</strong> — la fórmula de grado avanzado con triple acción que{' '}
-              <span style={{ color: 'var(--cyan)' }}>Defiende, Oxigena y Restaura</span> tu sistema respiratorio en tiempo récord.
+              <strong style={{ color: 'var(--white)' }}>Immuno Shield PRO</strong> — Con vitamina C, zinc, equinácea, astrágalo y hongos funcionales cuidadosamente seleccionados.
             </p>
 
             <p className="animate-fade-up animate-delay-3" style={{
               fontSize: 'var(--text-base)', color: 'var(--white-60)', marginBottom: '2rem',
             }}>
-              ¿Estás realmente protegido o solo tienes suerte?
+              Tu apoyo diario para una vida más plena.
             </p>
 
             {/* CTAs */}
@@ -70,7 +69,7 @@ export default function Hero({ onBuyClick }) {
             }}>
               <ShopifyBuyButton
                 variantId={VARIANT_ID}
-                buttonText="¡QUIERO MI ESCUDO PRO AHORA!"
+                buttonText="ORDENA AHORA"
               />
               <a href="#problema" className="btn-secondary">Ver por qué →</a>
             </div>

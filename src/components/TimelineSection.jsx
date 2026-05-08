@@ -135,7 +135,7 @@ export default function TimelineSection({ onBuyClick }) {
 
         <div style={{ textAlign: 'center' }}>
           <button onClick={onBuyClick} className="btn-primary">
-            Comenzar Mi Transformación →
+            ORDENA AHORA
           </button>
         </div>
       </div>

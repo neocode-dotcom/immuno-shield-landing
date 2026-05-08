@@ -86,7 +86,7 @@ export default function ComparisonTable({ onBuyClick }) {
 
         <div style={{ textAlign: 'center' }}>
           <button onClick={onBuyClick} className="btn-primary">
-            Elegir el Mejor — Immuno Shield PRO →
+            ORDENA AHORA
           </button>
         </div>
       </div>

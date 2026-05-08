@@ -133,7 +133,7 @@ export default function IngredientsSection({ onBuyClick }) {
 
         <div style={{ textAlign: 'center' }}>
           <button onClick={onBuyClick} className="btn-primary">
-            Obtener Esta Fórmula →
+            ORDENA AHORA
           </button>
         </div>
       </div>

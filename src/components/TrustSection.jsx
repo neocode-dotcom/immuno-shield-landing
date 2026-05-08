@@ -113,7 +113,7 @@ export default function TrustSection({ onBuyClick }) {
 
         <div style={{ textAlign: 'center' }}>
           <button onClick={onBuyClick} className="btn-primary">
-            Únete a los Que Ya Están Protegidos →
+            ORDENA AHORA
           </button>
         </div>
       </div>
