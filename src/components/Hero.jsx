@@ -37,14 +37,13 @@ export default function Hero({ onBuyClick }) {
             </div>
 
             <h1 className="font-display animate-fade-up animate-delay-2" style={{
-              fontSize: 'var(--text-hero)',
-              lineHeight: 1.0,
+              fontSize: 'clamp(2.5rem, 4vw + 1rem, 4.5rem)',
+              lineHeight: 1.05,
               marginBottom: '1.25rem',
               color: 'var(--white)',
+              textWrap: 'balance',
             }}>
-              Activa Tus Defensas<br />
-              <span style={{ color: 'var(--cyan)' }} className="text-glow-cyan">Naturales</span> y Apoya<br />
-              Tu Bienestar Diario
+              Activa Tus Defensas <span style={{ color: 'var(--cyan)' }} className="text-glow-cyan">Naturales</span><br className="md:hidden" /> y Apoya Tu Bienestar Diario
             </h1>
 
             <p className="animate-fade-up animate-delay-3" style={{
@@ -93,7 +92,7 @@ export default function Hero({ onBuyClick }) {
           </div>
 
           {/* Right: Product image */}
-          <div style={{ position: 'relative', display: 'flex', justifyContent: 'center' }}>
+          <div className="flex justify-center md:justify-end" style={{ position: 'relative' }}>
             {/* Glow halo */}
             <div style={{
               position: 'absolute', inset: '10%',
@@ -101,7 +100,7 @@ export default function Hero({ onBuyClick }) {
               filter: 'blur(40px)',
               borderRadius: '50%',
             }} />
-            <div style={{ position: 'relative', maxWidth: '480px', width: '100%' }}>
+            <div style={{ position: 'relative', maxWidth: '440px', width: '100%', transform: 'translateX(clamp(0px, 2vw, 20px))' }}>
               <img
                 src="/assets/infografias/Hero-Pic.jpeg"
                 alt="Immuno Shield PRO — Suplemento Inmunológico Premium"
