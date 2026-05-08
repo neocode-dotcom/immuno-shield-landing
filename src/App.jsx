@@ -21,7 +21,7 @@ function App() {
   return (
     <div style={{ minHeight: '100dvh', background: 'var(--midnight)' }}>
       <Navbar onBuyClick={scrollToCheckout} />
-      <main style={{ paddingTop: '68px' }}>
+      <main style={{ paddingTop: '100px' }}>
         <Hero onBuyClick={scrollToCheckout} />
         <PainSection onBuyClick={scrollToCheckout} />
         <SolutionSection onBuyClick={scrollToCheckout} />

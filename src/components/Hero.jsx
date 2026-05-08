@@ -13,7 +13,6 @@ export default function Hero({ onBuyClick }) {
                    radial-gradient(ellipse 60% 80% at 20% 80%, rgba(245,158,11,0.06) 0%, transparent 60%),
                    var(--midnight)`,
       overflow: 'hidden',
-      paddingTop: '68px',
     }}>
       {/* Decorative grid lines */}
       <div style={{
@@ -23,24 +22,6 @@ export default function Hero({ onBuyClick }) {
           linear-gradient(90deg, rgba(0,212,255,0.03) 1px, transparent 1px)`,
         backgroundSize: '60px 60px',
       }} />
-
-      {/* Urgency ticker */}
-      <div style={{
-        position: 'absolute', top: '68px', left: 0, right: 0,
-        background: 'linear-gradient(90deg, var(--cyan) 0%, #0099ff 100%)',
-        padding: '0.5rem 0', overflow: 'hidden', zIndex: 10,
-      }}>
-        <div className="ticker-track" style={{ display: 'inline-flex', gap: '4rem' }}>
-          {Array.from({ length: 8 }).map((_, i) => (
-            <span key={i} style={{
-              color: 'var(--midnight)', fontWeight: 700, fontSize: 'var(--text-sm)',
-              letterSpacing: '0.05em', textTransform: 'uppercase', whiteSpace: 'nowrap'
-            }}>
-              ⚡ OFERTA LIMITADA — 26% DESCUENTO &nbsp;&nbsp;•&nbsp;&nbsp; ENVÍO GRATIS &nbsp;&nbsp;•&nbsp;&nbsp; GARANTÍA 30 DÍAS
-            </span>
-          ))}
-        </div>
-      </div>
 
       <div className="container" style={{ paddingTop: '3rem', paddingBottom: '3rem', position: 'relative', zIndex: 1 }}>
         <div style={{

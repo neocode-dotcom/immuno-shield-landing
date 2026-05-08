@@ -12,16 +12,34 @@ export default function Navbar({ onBuyClick }) {
 
   return (
     <nav style={{
-      position: 'fixed', top: 0, left: 0, right: 0, zIndex: 50,
-      background: 'rgba(5, 13, 26, 0.92)',
-      backdropFilter: 'blur(16px)',
-      WebkitBackdropFilter: 'blur(16px)',
+      position: 'fixed', top: 0, left: 0, right: 0, zIndex: 100,
+      background: 'rgba(5, 13, 26, 0.95)',
+      backdropFilter: 'blur(20px)',
+      WebkitBackdropFilter: 'blur(20px)',
       borderBottom: '1px solid rgba(0, 212, 255, 0.15)',
     }}>
+      {/* Urgency Topbar */}
+      <div style={{
+        background: 'linear-gradient(90deg, var(--cyan) 0%, #0099ff 100%)',
+        padding: '0.5rem 0', overflow: 'hidden',
+        borderBottom: '1px solid rgba(0,0,0,0.1)'
+      }}>
+        <div className="ticker-track" style={{ display: 'inline-flex', gap: '4rem' }}>
+          {Array.from({ length: 8 }).map((_, i) => (
+            <span key={i} style={{
+              color: 'var(--midnight)', fontWeight: 700, fontSize: 'var(--text-xs)',
+              letterSpacing: '0.05em', textTransform: 'uppercase', whiteSpace: 'nowrap'
+            }}>
+              ⚡ OFERTA LIMITADA — 26% DESCUENTO &nbsp;&nbsp;•&nbsp;&nbsp; ENVÍO GRATIS &nbsp;&nbsp;•&nbsp;&nbsp; GARANTÍA 30 DÍAS
+            </span>
+          ))}
+        </div>
+      </div>
+
       <div className="container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', height: '68px' }}>
         {/* Logo */}
         <a href="#" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', textDecoration: 'none' }}>
-          <img src="/assets/logo.png" alt="A Lo Natural" style={{ height: '44px', width: 'auto' }} />
+          <img src="/assets/logo.png" alt="A Lo Natural" style={{ height: '40px', width: 'auto' }} />
         </a>
 
         {/* Desktop Links */}
