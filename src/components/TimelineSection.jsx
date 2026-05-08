@@ -1,30 +1,32 @@
+import { Calendar, Wind, Zap, TrendingUp, ShieldCheck } from 'lucide-react';
+
 const weeks = [
   {
     week: '01',
     title: 'Desintoxicación',
     desc: 'El NAC y el Eucalipto comienzan a expulsar toxinas acumuladas en tus pulmones. Respiras más ligero.',
-    icon: '🫁',
+    icon: <Wind size={24} />,
     color: 'var(--cyan)',
   },
   {
     week: '02',
     title: 'Refuerzo Inmune',
     desc: 'El Amla y el Saúco elevan tu conteo de defensas. Te sientes con más energía y menos fatiga.',
-    icon: '⚡',
+    icon: <Zap size={24} />,
     color: 'var(--amber)',
   },
   {
     week: '03',
     title: 'Optimización',
     desc: 'El Cordyceps mejora tu oxigenación celular. Tu resistencia física y mental alcanza niveles pico.',
-    icon: '📈',
+    icon: <TrendingUp size={24} />,
     color: '#a78bfa',
   },
   {
     week: '04',
     title: 'Blindaje Completo',
     desc: 'Tu escudo está activo. Tu cuerpo detecta y neutraliza amenazas antes de que se conviertan en síntomas.',
-    icon: '🛡️',
+    icon: <ShieldCheck size={24} />,
     color: '#4ade80',
   },
 ];
@@ -34,7 +36,9 @@ export default function TimelineSection({ onBuyClick }) {
     <section id="proceso" style={{ background: 'var(--midnight)', position: 'relative', overflow: 'hidden' }}>
       <div className="container">
         <div style={{ textAlign: 'center', marginBottom: 'clamp(2rem, 5vw, 4rem)' }}>
-          <div className="section-badge">📅 Tu Transformación</div>
+          <div className="section-badge" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}>
+            <Calendar size={16} /> Tu Transformación
+          </div>
           <h2 className="font-display" style={{
             fontSize: 'var(--text-4xl)', color: 'var(--white)', lineHeight: 1.1, marginBottom: '0.75rem'
           }}>

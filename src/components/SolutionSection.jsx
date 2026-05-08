@@ -1,18 +1,20 @@
+import { Shield, Wind, Microscope, FlaskConical } from 'lucide-react';
+
 const pillars = [
   {
-    icon: '🛡️',
+    icon: <Shield size={32} />,
     title: 'Defensa Blindada',
     desc: 'Crea una barrera infranqueable contra patógenos externos. Tu primera línea de defensa siempre activa.',
     color: 'var(--cyan)',
   },
   {
-    icon: '💨',
+    icon: <Wind size={32} />,
     title: 'Oxigenación Máxima',
     desc: 'Despeja las vías respiratorias y optimiza cada bocanada de aire. Respira con libertad total.',
     color: 'var(--amber)',
   },
   {
-    icon: '🔬',
+    icon: <Microscope size={32} />,
     title: 'Restauración Celular',
     desc: 'Repara el daño causado por el estrés oxidativo y la contaminación. Células jóvenes, cuerpo fuerte.',
     color: '#a78bfa',
@@ -35,7 +37,9 @@ export default function SolutionSection({ onBuyClick }) {
 
       <div className="container" style={{ position: 'relative', zIndex: 1 }}>
         <div style={{ textAlign: 'center', marginBottom: 'clamp(2rem, 5vw, 4rem)' }}>
-          <div className="section-badge">⚗ La Solución Científica</div>
+          <div className="section-badge" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}>
+            <FlaskConical size={16} /> La Solución Científica
+          </div>
           <h2 className="font-display" style={{
             fontSize: 'var(--text-4xl)', color: 'var(--white)', lineHeight: 1.1, marginBottom: '1rem',
           }}>
