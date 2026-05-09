@@ -1,8 +1,10 @@
+import { Droplet, Zap, ShieldCheck, Wind, Leaf, Sprout } from 'lucide-react';
+
 const ingredients = [
   {
     name: 'Amla Extract',
     dose: '600mg',
-    icon: '🫐',
+    icon: <Droplet size={32} />,
     desc: 'La mayor fuente de Vitamina C natural que "reprograma" tu sistema inmune para respuesta máxima.',
     benefit: 'Vitamina C Natural',
     color: '#a78bfa',
@@ -10,7 +12,7 @@ const ingredients = [
   {
     name: 'Cordyceps Sinensis',
     dose: '300mg',
-    icon: '🍄',
+    icon: <Zap size={32} />,
     desc: 'El hongo del rendimiento. Aumenta la absorción de oxígeno y la resistencia física.',
     benefit: 'O₂ + Resistencia',
     color: 'var(--amber)',
@@ -18,7 +20,7 @@ const ingredients = [
   {
     name: 'Saúco Negro',
     dose: '250mg',
-    icon: '🫚',
+    icon: <ShieldCheck size={32} />,
     desc: 'Bloquea la entrada de virus a las células. Tu guardaespaldas personal 24/7.',
     benefit: 'Antiviral Natural',
     color: '#818cf8',
@@ -26,7 +28,7 @@ const ingredients = [
   {
     name: 'NAC (N-Acetil Cisteína)',
     dose: 'Activo',
-    icon: '🫁',
+    icon: <Wind size={32} />,
     desc: 'El mucolítico natural más potente. Desintoxica tus pulmones de metales pesados y humo.',
     benefit: 'Detox Pulmonar',
     color: 'var(--cyan)',
@@ -34,7 +36,7 @@ const ingredients = [
   {
     name: 'Bromelaina + Eucalipto',
     dose: 'Complejo',
-    icon: '🌿',
+    icon: <Leaf size={32} />,
     desc: 'El equipo de choque que elimina la inflamación y despeja tus bronquios al instante.',
     benefit: 'Anti-inflamatorio',
     color: '#4ade80',
@@ -42,7 +44,7 @@ const ingredients = [
   {
     name: 'Jengibre + Cúrcuma',
     dose: 'Complejo',
-    icon: '🌱',
+    icon: <Sprout size={32} />,
     desc: 'Potentes antiinflamatorios naturales que refuerzan y prolongan la respuesta inmune.',
     benefit: 'Refuerzo Inmune',
     color: '#fb923c',
@@ -96,7 +98,7 @@ export default function IngredientsSection({ onBuyClick }) {
               }}
             >
               <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', marginBottom: '0.75rem' }}>
-                <span style={{ fontSize: '2rem' }}>{ing.icon}</span>
+                <span style={{ color: ing.color }}>{ing.icon}</span>
                 <span style={{
                   background: `${ing.color}15`, color: ing.color,
                   border: `1px solid ${ing.color}30`,
