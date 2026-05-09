@@ -33,7 +33,7 @@ export default function Hero({ onBuyClick }) {
           {/* Left: Copy */}
           <div>
             <div className="section-badge animate-fade-up animate-delay-1">
-              🛡 Fórmula de Grado PRO — Grado Médico
+              🛡️ Fórmula Premium de Alta Potencia
             </div>
 
             <h1 className="font-display animate-fade-up animate-delay-2" style={{
@@ -53,7 +53,7 @@ export default function Hero({ onBuyClick }) {
               lineHeight: 1.55,
               maxWidth: '520px',
             }}>
-              <strong style={{ color: 'var(--white)' }}>Immuno Shield PRO</strong> — Con vitamina C, zinc, equinácea, astrágalo y hongos funcionales cuidadosamente seleccionados.
+              <strong style={{ color: 'var(--white)' }}>Immuno Shield PRO</strong> — Con vitamina C, zinc, equinácea, astrágalo y hongos funcionales para apoyar el funcionamiento normal del sistema inmune.
             </p>
 
             <p className="animate-fade-up animate-delay-3" style={{
