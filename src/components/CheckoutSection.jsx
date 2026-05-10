@@ -3,7 +3,7 @@ import ShopifyBuyButton from './ShopifyBuyButton';
 
 const VARIANT_ID = import.meta.env.VITE_SHOPIFY_VARIANT_ID;
 const COMPARE_PRICE = 49.99;
-const CURRENT_PRICE = 36.99;
+const CURRENT_PRICE = 29.99;
 const DISCOUNT = Math.round((1 - CURRENT_PRICE / COMPARE_PRICE) * 100);
 
 export default function CheckoutSection() {
