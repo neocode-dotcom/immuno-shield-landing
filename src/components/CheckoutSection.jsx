@@ -114,6 +114,8 @@ export default function CheckoutSection() {
                       color: 'var(--white)', cursor: 'pointer', fontSize: '1.25rem', fontWeight: 700,
                     }}
                   >+</button>
+                </div>
+                <div style={{ minHeight: '1.5rem', marginTop: '0.5rem' }}>
                   {quantity > 1 && (
                     <span style={{ color: 'var(--cyan)', fontWeight: 700, fontSize: 'var(--text-base)' }}>
                       Total: ${total}
