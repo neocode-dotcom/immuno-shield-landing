@@ -63,7 +63,7 @@ export default function CheckoutSection() {
             </div>
 
             {/* Body */}
-            <div style={{ padding: '1.75rem' }}>
+            <div style={{ padding: '1.75rem', textAlign: 'center' }}>
               <h3 style={{ fontWeight: 700, color: 'var(--white)', fontSize: 'var(--text-xl)', marginBottom: '0.25rem' }}>
                 Immuno Shield PRO
               </h3>
@@ -72,7 +72,7 @@ export default function CheckoutSection() {
               </p>
 
               {/* Price */}
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1.5rem' }}>
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.75rem', marginBottom: '1.5rem' }}>
                 <span style={{ fontSize: 'var(--text-3xl)', fontWeight: 800, color: 'var(--white)' }}>
                   ${CURRENT_PRICE}
                 </span>
@@ -87,11 +87,11 @@ export default function CheckoutSection() {
               </div>
 
               {/* Quantity selector */}
-              <div style={{ marginBottom: '1.5rem' }}>
+              <div style={{ marginBottom: '1.5rem', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                 <label style={{ display: 'block', fontSize: 'var(--text-sm)', color: 'var(--white-60)', marginBottom: '0.5rem', fontWeight: 600 }}>
                   Cantidad
                 </label>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '1rem' }}>
                   <button
                     onClick={() => setQuantity(Math.max(1, quantity - 1))}
                     disabled={quantity <= 1}
